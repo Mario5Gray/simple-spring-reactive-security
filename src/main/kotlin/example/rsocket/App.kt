@@ -48,7 +48,7 @@ class App {
                     User.builder()
                             .username("raker")
                             .password("{noop}nopassword")
-                            .roles("RAKE", "LOGIN")
+                            .roles("RAKE")
                             .build(),
                     User.builder()
                             .username("connector")
