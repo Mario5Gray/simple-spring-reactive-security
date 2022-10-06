@@ -49,7 +49,12 @@ class App {
                             .username("raker")
                             .password("{noop}nopassword")
                             .roles("RAKE", "LOGIN")
-                            .build()
+                            .build(),
+                    User.builder()
+                            .username("connector")
+                            .password("{noop}nopassword")
+                            .roles("LOGIN")
+                            .build(),
             )
 
     companion object {

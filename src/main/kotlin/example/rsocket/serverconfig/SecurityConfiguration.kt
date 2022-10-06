@@ -16,7 +16,7 @@ open class SecurityConfiguration {
             .simpleAuthentication(Customizer.withDefaults())
             .authorizePayload { authorize ->
                 authorize
-                        .setup().authenticated()
+                        .setup().hasRole("LOGINONLY")
                         .anyRequest().authenticated()
             }
             .build()
